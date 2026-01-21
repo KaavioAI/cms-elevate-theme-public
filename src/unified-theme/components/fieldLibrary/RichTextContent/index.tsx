@@ -36,6 +36,7 @@ const extendedFeatureSet = [
   'link',
   'image',
   'emoji',
+  'table',
   'personalize',
   'cta',
   'embed',

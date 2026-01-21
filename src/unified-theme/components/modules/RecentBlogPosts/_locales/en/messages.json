@@ -153,5 +153,15 @@
     "message": "Select a blog in the sidebar",
     "description": "",
     "placeholders": null
+  },
+  "filterByTag.label": {
+    "message": "Filter by tag",
+    "description": "",
+    "placeholders": null
+  },
+  "tag.label": {
+    "message": "Tag",
+    "description": "",
+    "placeholders": null
   }
 }
