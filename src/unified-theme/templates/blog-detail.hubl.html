@@ -30,25 +30,34 @@
 
     <h1 class="hs-elevate-blog-title">{{ content.name|sanitize_html }}</h1>
 
-    <div class="hs-elevate-blog-meta">
-    {% if content.blog_author.avatar %}
-      <div class="hs-elevate-blog-meta__image-container">
-        <img src="{{ content.blog_author.avatar }}" alt="{{ content.blog_author.display_name|escape_attr }}" width="64" height="64">
+    {% set authors_to_display = content.blog_author_list if content.blog_author_list and content.blog_author_list|length > 0 else [content.blog_author] if content.blog_author else [] %}
+    {% if authors_to_display and authors_to_display|length > 0 %}
+      <div class="hs-elevate-blog-meta">
+        <div class="hs-elevate-blog-meta__avatars">
+          {% for author in authors_to_display %}
+            <div class="hs-elevate-blog-meta__image-container">
+              <img src="{{ author.avatar or get_asset_url('../images/avatar-placeholder.jpg') }}" alt="{{ author.display_name|escape_attr }}" width="48" height="48">
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="hs-elevate-blog-meta__content">
+          <div class="hs-elevate-blog-meta__authors">
+            {% for author in authors_to_display %}
+              {% if author.display_name %}
+                {{ author.display_name|sanitize_html }}{% if not loop.last %}{% if loop.revindex == 2 %}, and {% else %}, {% endif %}{% endif %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
       </div>
-    {% endif %}
 
-
-    <div class="hs-elevate-blog-meta__content">
-      {% if content.blog_author.display_name %}
-        <span class="hs-elevate-blog-meta__author">{{ content.blog_author.display_name|sanitize_html }}</span>
-      {% endif %}
-      {{ '<span class="hs-elevate-blog-meta__separator">|</span>' if content.blog_author.display_name and content.publish_date }}
       {% if content.publish_date %}
-        <time datetime="{{ content.publish_date }}" class="hs-elevate-blog-meta__date">{{ content.publish_date|format_date('long') }}</time>
+        <div class="hs-elevate-blog-meta__date-container">
+          <time datetime="{{ content.publish_date }}" class="hs-elevate-blog-meta__date">{{ content.publish_date|format_date('long') }}</time>
+        </div>
       {% endif %}
-    </div>
-
-    </div>
+    {% endif %}
 
     <div class="hs-elevate-blog-audio-narration">
       {% module "narration"
