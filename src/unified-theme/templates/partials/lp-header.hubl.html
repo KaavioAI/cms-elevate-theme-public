@@ -23,7 +23,15 @@
       {% dnd_module
         offset=0,
         width=4,
-        path="@hubspot/logo"
+        path="@hubspot/linked_image",
+        img={
+          "src": get_asset_url("../../images/kaavio-logo.svg"),
+          "alt": "Kaavio",
+          "loading": "eager",
+          "max_width": 120,
+          "max_height": 30
+        },
+        link="https://kaavio.ai"
       %}
       {% end_dnd_module %}
     {% end_dnd_section %}
