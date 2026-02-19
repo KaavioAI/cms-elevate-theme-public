@@ -12,28 +12,15 @@
 
 {# Partial #}
 
-<header class="hs-elevate-header">
-  {% dnd_area "header" label="Header" %}
-    {% dnd_section
-      padding={
-        "top": spacing_24,
-        "bottom": spacing_24
-      }
-    %}
-      {% dnd_module
-        offset=0,
-        width=4,
-        path="@hubspot/linked_image",
-        img={
-          "src": get_asset_url("../../images/kaavio-logo.svg"),
-          "alt": "Kaavio",
-          "loading": "eager",
-          "max_width": 120,
-          "max_height": 30
-        },
-        link="https://kaavio.ai"
-      %}
-      {% end_dnd_module %}
-    {% end_dnd_section %}
-  {% end_dnd_area %}
+<header class="hs-elevate-header" style="position: sticky; top: 0; z-index: 10; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); background: rgba(255,255,255,0.1);">
+
+  <a href="#main-content" class="hs-elevate-header__skip">{{ template_translations.partial_header_skip_to_content.message }}</a>
+
+  <div class="kaavio-header-inner" style="max-width: 1440px; margin: 0 auto; padding: 12px 60px; display: flex; justify-content: space-between; align-items: center;">
+    <a href="https://kaavio.ai" style="display: inline-block;">
+      <img src="{{ get_asset_url('../../images/kaavio-logo.svg') }}" alt="Kaavio" style="height: 28px; width: auto;" loading="eager" />
+    </a>
+    <a href="https://meetings.hubspot.com/derek-gregg/kaavio-intro" target="_blank" rel="noopener" style="background: #304dd8; color: white; border-radius: 74px; padding: 12px 24px; font-weight: 600; font-size: 14px; text-decoration: none; white-space: nowrap; transition: background 0.2s;">Let's Talk</a>
+  </div>
+
 </header>

@@ -12,15 +12,16 @@
 
 {# Partial #}
 
-<header class="hs-elevate-header">
+<header class="hs-elevate-header" style="position: sticky; top: 0; z-index: 10; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); background: rgba(255,255,255,0.1);">
 
   {# The link below is used for a navigation skipper which allows users navigating the site with their keyboard to skip over the site navigation #}
   <a href="#main-content" class="hs-elevate-header__skip">{{ template_translations.partial_header_skip_to_content.message }}</a>
 
-  <div style="max-width: 1200px; margin: 0 auto; padding: 24px;">
+  <div class="kaavio-header-inner" style="max-width: 1440px; margin: 0 auto; padding: 12px 60px; display: flex; justify-content: space-between; align-items: center;">
     <a href="https://kaavio.ai" style="display: inline-block;">
       <img src="{{ get_asset_url('../../images/kaavio-logo.svg') }}" alt="Kaavio" style="height: 28px; width: auto;" loading="eager" />
     </a>
+    <a href="https://meetings.hubspot.com/derek-gregg/kaavio-intro" target="_blank" rel="noopener" style="background: #304dd8; color: white; border-radius: 74px; padding: 12px 24px; font-weight: 600; font-size: 14px; text-decoration: none; white-space: nowrap; transition: background 0.2s;">Let's Talk</a>
   </div>
 
 </header>

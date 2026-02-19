@@ -44,3 +44,40 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Kaavio: Layout overrides to match kaavio.ai Framer site */
+
+/* Content max-width: 1096px (down from 1296px) */
+:root {
+  --hsElevate--contentWrapper--wide__maxWidth: 1096px;
+}
+
+/* Typography scale to match Framer */
+:root {
+  --hsElevate--h1__fontSize: 3.5rem;
+  --hsElevate--h2__fontSize: 3rem;
+  --hsElevate--body__fontSize: 1.125rem;
+  --hsElevate--body__lineHeight: 1.55;
+}
+
+/* Section padding */
+:root {
+  --hsElevate--section--horizontalPadding: 48px;
+  --hsElevate--section--medium__verticalPadding: 80px;
+  --hsElevate--section--small__verticalPadding: 48px;
+}
+
+/* Header hover state */
+.kaavio-header-inner a[href*="meetings.hubspot.com"]:hover {
+  background: #2a3fb5 !important;
+}
+
+/* Mobile overrides */
+@media (max-width: 767px) {
+  :root {
+    --hsElevate--section--horizontalPadding: 16px;
+  }
+  .kaavio-header-inner {
+    padding: 12px 16px !important;
+  }
+}
