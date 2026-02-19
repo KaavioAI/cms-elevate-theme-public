@@ -3,13 +3,12 @@ import styles from './blog-listing.module.css';
 import cx, { staticWithModule } from '../../utils/classnames.js';
 import { createComponent } from '../../utils/create-component.js';
 import blogSVG from './assets/blog.svg';
-import { withUrlPath } from '@hubspot/cms-components';
 import BlogCardComponent from '../../BlogCardComponent/index.js';
 import Pagination from './pagination.js';
 import { HeadingStyleFieldLibraryType } from '../../fieldLibrary/HeadingStyle/types.js';
 import { CardStyleFieldLibraryType } from '../../fieldLibrary/CardStyle/types.js';
 import { HeadingAndTextFieldLibraryType } from '../../fieldLibrary/HeadingAndText/types.js';
-import fetchGatedPosts from '../../utils/ServerSideProps/fetchGatedBlogPosts.js';
+// Removed fetchGatedPosts - requires Content Hub Pro/Enterprise tier
 
 const swm = staticWithModule(styles);
 
@@ -92,8 +91,6 @@ export const Component = (props: BlogListingProps) => {
 export { fields } from './fields.js';
 
 export { default as hublDataTemplate } from './hubl_data.hubl.html?raw';
-
-export const getServerSideProps = withUrlPath(fetchGatedPosts);
 
 export const meta: ModuleMeta = {
   label: 'Blog listing',
