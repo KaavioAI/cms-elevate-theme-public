@@ -460,7 +460,7 @@
                   }
                 },
                 "default": {
-                  "color": "#F4F2FF",
+                  "color": "#E8EEFF",
                   "opacity": 100
                 }
               },
@@ -474,7 +474,7 @@
                   }
                 },
                 "default": {
-                  "color": "#D2CAFF",
+                  "color": "#9bb2f0",
                   "opacity": 100
                 }
               },
@@ -488,7 +488,7 @@
                   }
                 },
                 "default": {
-                  "color": "#4F38E0",
+                  "color": "#304dd8",
                   "opacity": 100
                 }
               }
@@ -1327,7 +1327,7 @@
                       }
                     },
                     "default": {
-                      "color": "#6854E8",
+                      "color": "#2a3fb5",
                       "opacity": 100
                     }
                   },
@@ -1344,7 +1344,7 @@
                       }
                     },
                     "default": {
-                      "color": "#6854E8",
+                      "color": "#2a3fb5",
                       "opacity": 100
                     }
                   },
@@ -1540,7 +1540,7 @@
                       }
                     },
                     "default": {
-                      "color": "#6854E8",
+                      "color": "#2a3fb5",
                       "opacity": 100
                     }
                   },
@@ -1557,7 +1557,7 @@
                       }
                     },
                     "default": {
-                      "color": "#6854E8",
+                      "color": "#2a3fb5",
                       "opacity": 100
                     }
                   },
@@ -1571,7 +1571,7 @@
                       }
                     },
                     "default": {
-                      "color": "#6854E8",
+                      "color": "#2a3fb5",
                       "opacity": 100
                     }
                   }
@@ -1752,7 +1752,7 @@
                       }
                     },
                     "default": {
-                      "color": "#E9E5FF",
+                      "color": "#E8EEFF",
                       "opacity": 100
                     }
                   },
@@ -1769,7 +1769,7 @@
                       }
                     },
                     "default": {
-                      "color": "#E9E5FF",
+                      "color": "#E8EEFF",
                       "opacity": 100
                     }
                   },
@@ -1965,7 +1965,7 @@
                       }
                     },
                     "default": {
-                      "color": "#E9E5FF",
+                      "color": "#E8EEFF",
                       "opacity": 100
                     }
                   },
@@ -1982,7 +1982,7 @@
                       }
                     },
                     "default": {
-                      "color": "#E9E5FF",
+                      "color": "#E8EEFF",
                       "opacity": 100
                     }
                   },
@@ -1996,7 +1996,7 @@
                       }
                     },
                     "default": {
-                      "color": "#E9E5FF",
+                      "color": "#E8EEFF",
                       "opacity": 100
                     }
                   }

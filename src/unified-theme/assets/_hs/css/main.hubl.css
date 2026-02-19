@@ -1,3 +1,6 @@
+/* Kaavio: Load General Sans from Fontshare (matches kaavio.ai Framer site) */
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap');
+
 /* Settings */
 
 @import './settings/_variables.hubl.css';
@@ -27,3 +30,17 @@
 
 /* Preset-specific styles */
 @import './presets/_onyx.hubl.css';
+
+/* Kaavio: Override font-family to General Sans with Inter fallback */
+body,
+h1, h2, h3, h4, h5, h6,
+p, li, a, span, blockquote,
+button, input, textarea, select,
+.button, .hs-button {
+  font-family: 'General Sans', Inter, sans-serif !important;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
