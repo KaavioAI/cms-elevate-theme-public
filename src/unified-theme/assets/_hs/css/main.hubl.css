@@ -52,12 +52,34 @@ body {
   --hsElevate--contentWrapper--wide__maxWidth: 1096px;
 }
 
-/* Typography scale to match Framer */
+/* Typography scale */
 :root {
   --hsElevate--h1__fontSize: 3.5rem;
-  --hsElevate--h2__fontSize: 3rem;
+  --hsElevate--h2__fontSize: 2.25rem;
+  --hsElevate--h2__fontWeight: 600;
+  --hsElevate--h3__fontSize: 1.625rem;
+  --hsElevate--h3__fontWeight: 600;
+  --hsElevate--h4__fontSize: 1.25rem;
+  --hsElevate--h4__fontWeight: 600;
   --hsElevate--body__fontSize: 1.125rem;
   --hsElevate--body__lineHeight: 1.55;
+}
+
+/* Heading refinements: letter-spacing, line-height, and margin per level */
+h2 {
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  margin-block: 0 1.5rem;
+}
+
+h3 {
+  line-height: 1.3;
+  margin-block: 0 1rem;
+}
+
+h4 {
+  line-height: 1.35;
+  margin-block: 0 0.75rem;
 }
 
 /* Section padding */
